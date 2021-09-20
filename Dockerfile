@@ -11,4 +11,5 @@ LABEL repo="https://github.com/madalinignisca/postgis"
 RUN apt-get update \
     && apt-get upgrade --no-install-recommends -y \
     && apt-get install --no-install-recommends -y \
-      postgresql-13-postgis-3
+      postgresql-13-postgis-3 \
+      postgresql-13-postgis-3-scripts
