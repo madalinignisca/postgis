@@ -14,5 +14,5 @@ LABEL repo="https://github.com/madalinignisca/postgis"
 RUN apt-get update \
     && apt-get upgrade --no-install-recommends -y \
     && apt-get install --no-install-recommends -y \
-      postgresql-${VERSION}-postgis-${POSTGIS} \
-      postgresql-${VERSION}-postgis-${POSTGIS}-scripts
+      postgresql-${POSTGRES}-postgis-${POSTGIS} \
+      postgresql-${POSTGRES}-postgis-${POSTGIS}-scripts
