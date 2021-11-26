@@ -1,8 +1,10 @@
 ARG IMAGE=postgres
-ARG VERSION=latest
-ARG POSTGIS=3
+ARG VERSION=14
 
 FROM ${IMAGE}:${VERSION}
+
+ARG POSTGRES=14
+ARG POSTGIS=3
 
 LABEL maintainer="Madalin Ignisca"
 LABEL version="1.x"
