@@ -55,8 +55,9 @@ jobs:
                   "16nsk/postgis:12-3",
               ]
               args = {
-                  POSTGRESQL_VERSION="12",
-                  POSTGIS_VERSION="3"
+                  POSTGRESQL="12",
+                  POSTGIS="3",
+                  VERSION="3",
               }
           }
           
@@ -66,8 +67,9 @@ jobs:
                   "16nsk/postgis:13-3",
               ]
               args = {
-                  POSTGRESQL_VERSION="13",
-                  POSTGIS_VERSION="3"
+                  POSTGRESQL="13",
+                  POSTGIS="3",
+                  VERSION="3",
               }
           }
           
@@ -78,8 +80,9 @@ jobs:
                   "16nsk/postgis:14-3",
               ]
               args = {
-                  POSTGRESQL_VERSION="14",
-                  POSTGIS_VERSION="3"
+                  POSTGRESQL="14",
+                  POSTGIS="3",
+                  VERSION="3",
               }
           }
           EOF
