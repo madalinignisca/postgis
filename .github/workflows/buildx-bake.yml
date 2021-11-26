@@ -34,7 +34,9 @@ jobs:
           cat <<'EOF' > docker-bake.hcl
           group "default" {
               targets = [
-                  "13-3"
+                  "12-3",
+                  "13-3",
+                  "14-3",
               ]
           }
 
@@ -43,18 +45,40 @@ jobs:
               dockerfile="Dockerfile"
               platforms = [
                   "linux/amd64",
-                  "linux/arm64"
+                  "linux/arm64",
               ]
+          }
+          
+          target "12-3" {
+              inherits=["default"]
+              tags = [
+                  "16nsk/postgis:12-3",
+              ]
+              args = {
+                  POSTGRESQL_VERSION="12",
+                  POSTGIS_VERSION="3"
+              }
           }
           
           target "13-3" {
               inherits=["default"]
               tags = [
-                  "16nsk/postgis:latest",
                   "16nsk/postgis:13-3",
               ]
               args = {
                   POSTGRESQL_VERSION="13",
+                  POSTGIS_VERSION="3"
+              }
+          }
+          
+          target "14-3" {
+              inherits=["default"]
+              tags = [
+                  "16nsk/postgis:latest",
+                  "16nsk/postgis:14-3",
+              ]
+              args = {
+                  POSTGRESQL_VERSION="14",
                   POSTGIS_VERSION="3"
               }
           }
