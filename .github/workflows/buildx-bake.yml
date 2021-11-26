@@ -57,7 +57,7 @@ jobs:
               args = {
                   POSTGRESQL="12",
                   POSTGIS="3",
-                  VERSION="3",
+                  VERSION="12",
               }
           }
           
@@ -69,7 +69,7 @@ jobs:
               args = {
                   POSTGRESQL="13",
                   POSTGIS="3",
-                  VERSION="3",
+                  VERSION="13",
               }
           }
           
@@ -82,7 +82,7 @@ jobs:
               args = {
                   POSTGRESQL="14",
                   POSTGIS="3",
-                  VERSION="3",
+                  VERSION="14",
               }
           }
           EOF
