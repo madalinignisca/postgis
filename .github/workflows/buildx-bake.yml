@@ -51,7 +51,7 @@ jobs:
               inherits=["default"]
               tags = [
                   "16nsk/postgis:latest",
-                  "16nsk/devcontainers:13-3",
+                  "16nsk/postgis:13-3",
               ]
               args = {
                   POSTGRESQL_VERSION="13",
